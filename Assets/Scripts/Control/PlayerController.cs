@@ -1,15 +1,30 @@
 using UnityEngine;
-using RPG.Movement;
+using RPG.Core;
 using RPG.Combat;
+using RPG.Movement;
 using System;
 
 namespace RPG.Control
 {
+    [RequireComponent(typeof(ActionScheduler))]
+    [RequireComponent(typeof(Mover))]
+    [RequireComponent(typeof(Fighter))]
     [RequireComponent(typeof(Health))]
+    [RequireComponent(typeof(CapsuleCollider))]
+
     public class PlayerController : MonoBehaviour
     {
+        Health health;
+
+        private void Start()
+        {
+            health = GetComponent<Health>();
+        }
+
         private void Update()
         {
+            if (health.IsDead()) return;
+
             if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
         }
@@ -21,12 +36,13 @@ namespace RPG.Control
             {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
 
-                // if (target == null) continue;
-                if (!GetComponent<Fighter>().CanAttack(target)) continue;
+                if (target == null) continue;
 
-                if (Input.GetMouseButtonDown(0))
+                if (!GetComponent<Fighter>().CanAttack(target.gameObject)) continue;
+
+                if (Input.GetMouseButton(0))
                 {
-                    GetComponent<Fighter>().Attack(target);
+                    GetComponent<Fighter>().Attack(target.gameObject);
                 }
                 return true;
             }
@@ -44,7 +60,7 @@ namespace RPG.Control
                 if (Input.GetMouseButton(0))
                 {
                     GetComponent<Mover>().StartMoveAction(hit.point);
-                    print("Moving to where my master orders me to go....!");
+                    // print("Moving to where my master orders me to go....!");
                 }
                 return true;
             }
