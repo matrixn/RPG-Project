@@ -9,6 +9,7 @@ namespace RPG.Movement
     public class Mover : MonoBehaviour, IAction
     {
         Transform target;
+        [SerializeField] float maxSpeed = 5.66f;
         NavMeshAgent navMeshAgent;
         Animator animator;
         Health health;
@@ -28,15 +29,16 @@ namespace RPG.Movement
         }
 
         //moving as action, this will cancel previous actions (eg. attack) and that's why Fighter uses MoveTo at #19
-        public void StartMoveAction(Vector3 destination)
+        public void StartMoveAction(Vector3 destination, float speedFraction)
         {
             GetComponent<ActionScheduler>().StartAction(this);
-            MoveTo(destination);
+            MoveTo(destination, speedFraction);
         }
 
-        public void MoveTo(Vector3 destination)
+        public void MoveTo(Vector3 destination, float speedFraction)
         {
             navMeshAgent.destination = destination;
+            navMeshAgent.speed = maxSpeed * Mathf.Clamp01(speedFraction);
             navMeshAgent.isStopped = false;
         }
 

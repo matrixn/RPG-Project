@@ -20,7 +20,10 @@ namespace RPG.Control
         [SerializeField] float suspicionTime = 3f;
         [SerializeField] PatrolPath patrolPath;
         [SerializeField] float waypointTolerance = 1f;
+        [Range(1f, 100f)]
         [SerializeField] float waypointDwellTime = 3f;
+        [Range(0.3f, 1f)]
+        [SerializeField] float patrolSpeedFraction = 0.3f;
         Fighter fighter;
         Health health;
         Mover mover;
@@ -73,7 +76,6 @@ namespace RPG.Control
 
         private void PatrolBehaviour()
         {
-            print("Start partroling..." + fighter.transform.name);
             Vector3 nextPosition = guardPosition;
 
             if (patrolPath != null)
@@ -89,8 +91,7 @@ namespace RPG.Control
                     nextPosition = GetCurrentWaypoint();
                 }
             }
-            print(fighter.transform.name + " goes to " + nextPosition);
-            mover.StartMoveAction(nextPosition);
+            mover.StartMoveAction(nextPosition, patrolSpeedFraction);
         }
 
         private bool AtWaypoint()

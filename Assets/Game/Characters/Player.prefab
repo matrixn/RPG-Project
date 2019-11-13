@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!136 &2035948895
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97352258691638828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.29
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &6313588078919689834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,37 +46,37 @@ PrefabInstance:
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1824608
+      value: 25.446398
       objectReference: {fileID: 0}
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.019866943
       objectReference: {fileID: 0}
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.8070793
+      value: 42.53119
       objectReference: {fileID: 0}
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.9829209
       objectReference: {fileID: 0}
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.18402888
       objectReference: {fileID: 0}
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
@@ -77,12 +91,17 @@ PrefabInstance:
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -201.209
       objectReference: {fileID: 0}
     - target: {fileID: 2446785628284912524, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 281566803119937939, guid: e6e0251cde7a6694aa743ac51230d2db,
+        type: 3}
+      propertyPath: healthPoints
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1127268510, guid: e6e0251cde7a6694aa743ac51230d2db, type: 3}
       propertyPath: weaponRange

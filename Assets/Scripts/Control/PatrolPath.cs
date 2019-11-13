@@ -10,7 +10,7 @@ namespace RPG.Control
 
         private void OnDrawGizmos()
         {
-            print(transform.name + " - " + transform.childCount);
+            // print(transform.name + " - " + transform.childCount);
             for (int i = 0; i < transform.childCount; i++)
             {
                 int j = GetNextIndex(i);
