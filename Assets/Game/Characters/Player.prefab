@@ -107,6 +107,30 @@ PrefabInstance:
       propertyPath: weaponRange
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1127268510, guid: e6e0251cde7a6694aa743ac51230d2db, type: 3}
+      propertyPath: waponPrefab
+      value: 
+      objectReference: {fileID: 5793256463075770297, guid: 8fff7c8becec7964f986c2f7c98a1db9,
+        type: 3}
+    - target: {fileID: 1127268510, guid: e6e0251cde7a6694aa743ac51230d2db, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 8308034399479988422}
+    - target: {fileID: 1127268510, guid: e6e0251cde7a6694aa743ac51230d2db, type: 3}
+      propertyPath: weaponPrefab
+      value: 
+      objectReference: {fileID: 5793256463075770297, guid: 8fff7c8becec7964f986c2f7c98a1db9,
+        type: 3}
+    - target: {fileID: 1127268510, guid: e6e0251cde7a6694aa743ac51230d2db, type: 3}
+      propertyPath: weaponOverrideAnim
+      value: 
+      objectReference: {fileID: 22100000, guid: 728f8917a8e33cf4689bd5e34ff22fd4,
+        type: 2}
+    - target: {fileID: 1127268510, guid: e6e0251cde7a6694aa743ac51230d2db, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: c61e5be71619425428acf82332f47618,
+        type: 2}
     - target: {fileID: 788265000551502766, guid: e6e0251cde7a6694aa743ac51230d2db,
         type: 3}
       propertyPath: uniqueIdentifier
@@ -137,10 +161,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_Knights_Soldier_02
       objectReference: {fileID: 0}
-    - target: {fileID: 13707166, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3f6fc0cf5e5d31c458bc74ede87cb8ae, type: 2}
     - target: {fileID: 435482, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -185,5 +205,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13707166, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3f6fc0cf5e5d31c458bc74ede87cb8ae, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+--- !u!4 &8308034399479988422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 461188, guid: 679ff741e12a7e740819ede24a7000b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8308034399480056130}
+  m_PrefabAsset: {fileID: 0}
