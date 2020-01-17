@@ -37,6 +37,7 @@ namespace RPG.Control
 
         private void Start()
         {
+            Debug.Log("AI Controller started");
             fighter = GetComponent<Fighter>();
             health = GetComponent<Health>();
             mover = GetComponent<Mover>();
@@ -61,6 +62,7 @@ namespace RPG.Control
             }
             else
             {
+
                 // fighter.Cancel();
                 PatrolBehaviour();
             }
@@ -91,6 +93,7 @@ namespace RPG.Control
                     nextPosition = GetCurrentWaypoint();
                 }
             }
+
             mover.StartMoveAction(nextPosition, patrolSpeedFraction);
         }
 
