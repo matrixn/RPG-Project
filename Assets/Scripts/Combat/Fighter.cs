@@ -65,11 +65,29 @@ namespace RPG.Combat
             GetComponent<Animator>().SetTrigger("attack");
         }
 
-        //Animation Event!
+        //Animation Event (name exist only in sword animation...workaround for bow animation is Shoot() which calls Hit() )!
+        //check in Animator
         void Hit()
         {
             if (target == null) return;
-            target.TakeDamage(currentWeapon.GetDamage());
+            if (currentWeapon.HasProjectile())
+            {
+                //bow attack without damage (damage is on projectile)
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+            }
+            else
+            {
+                //sword attack + take damage
+                target.TakeDamage(currentWeapon.GetDamage());
+
+            }
+        }
+
+        //bow animation action is called shoot and ... sword animation is called hit
+        //a nice way to use both
+        void Shoot()
+        {
+            Hit();
         }
 
         private bool GetIsInRange()
