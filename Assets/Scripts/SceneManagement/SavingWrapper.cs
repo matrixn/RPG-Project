@@ -32,6 +32,12 @@ namespace RPG.SceneManagement
             {
                 Save();
             }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Debug.Log("Deleted savefile!");
+                Delete();
+            }
         }
 
         public void Save()
@@ -42,6 +48,11 @@ namespace RPG.SceneManagement
         public void Load()
         {
             GetComponent<SavingSystem>().Load(defaultSaveFile);
+        }
+
+        public void Delete()
+        {
+            GetComponent<SavingSystem>().Delete(defaultSaveFile);
         }
     }
 

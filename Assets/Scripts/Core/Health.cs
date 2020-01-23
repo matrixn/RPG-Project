@@ -19,7 +19,7 @@ namespace RPG.Core
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0);
             if (healthPoints == 0) Die();
-            print(healthPoints);
+            // print(healthPoints);
         }
 
         private void Die()

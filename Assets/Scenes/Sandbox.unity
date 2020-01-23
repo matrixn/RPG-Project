@@ -277,8 +277,14 @@ PrefabInstance:
     - target: {fileID: 3262551798945718724, guid: c1b63e9d7ef054b46802d19654c6b9dc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3262551798945718724, guid: c1b63e9d7ef054b46802d19654c6b9dc,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 3262551798945718713, guid: c1b63e9d7ef054b46802d19654c6b9dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -408,17 +414,17 @@ PrefabInstance:
     - target: {fileID: 7907717033833824752, guid: bb1a8a5c5c909f0408f778ae0cda70d3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.8519
+      value: 39.87
       objectReference: {fileID: 0}
     - target: {fileID: 7907717033833824752, guid: bb1a8a5c5c909f0408f778ae0cda70d3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.019867897
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 7907717033833824752, guid: bb1a8a5c5c909f0408f778ae0cda70d3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.629288
+      value: 22.34
       objectReference: {fileID: 0}
     - target: {fileID: 7907717033833824752, guid: bb1a8a5c5c909f0408f778ae0cda70d3,
         type: 3}
@@ -833,17 +839,17 @@ PrefabInstance:
     - target: {fileID: 4176270722751183125, guid: 04faf3c28ed2ca543b7dd00b147b30fe,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.64
+      value: 39.91
       objectReference: {fileID: 0}
     - target: {fileID: 4176270722751183125, guid: 04faf3c28ed2ca543b7dd00b147b30fe,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.019867897
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 4176270722751183125, guid: 04faf3c28ed2ca543b7dd00b147b30fe,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.81
+      value: 18.67
       objectReference: {fileID: 0}
     - target: {fileID: 4176270722751183125, guid: 04faf3c28ed2ca543b7dd00b147b30fe,
         type: 3}
@@ -1165,6 +1171,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: fc90737f0936a09428f304cdf78fb74c,
         type: 2}
+    - target: {fileID: 4031447737512142826, guid: 72198a3aaf47b43438e5aee17f444db5,
+        type: 3}
+      propertyPath: defaultWeaponName
+      value: Bow
+      objectReference: {fileID: 0}
     - target: {fileID: 1587007369905558044, guid: 72198a3aaf47b43438e5aee17f444db5,
         type: 3}
       propertyPath: maxSpeed
@@ -2230,7 +2241,7 @@ PrefabInstance:
     - target: {fileID: 7557247492033666667, guid: fdac9adb15f2be744a75182641070b2d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.936386
+      value: 39.75
       objectReference: {fileID: 0}
     - target: {fileID: 7557247492033666667, guid: fdac9adb15f2be744a75182641070b2d,
         type: 3}
@@ -2240,7 +2251,7 @@ PrefabInstance:
     - target: {fileID: 7557247492033666667, guid: fdac9adb15f2be744a75182641070b2d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.523651
+      value: 26.33
       objectReference: {fileID: 0}
     - target: {fileID: 7557247492033666667, guid: fdac9adb15f2be744a75182641070b2d,
         type: 3}
@@ -2299,12 +2310,18 @@ PrefabInstance:
     - target: {fileID: 3262551798945718724, guid: c1b63e9d7ef054b46802d19654c6b9dc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3262551798945718724, guid: c1b63e9d7ef054b46802d19654c6b9dc,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 3262551798945718713, guid: c1b63e9d7ef054b46802d19654c6b9dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.54
+      value: 42.01
       objectReference: {fileID: 0}
     - target: {fileID: 3262551798945718713, guid: c1b63e9d7ef054b46802d19654c6b9dc,
         type: 3}
@@ -2314,7 +2331,7 @@ PrefabInstance:
     - target: {fileID: 3262551798945718713, guid: c1b63e9d7ef054b46802d19654c6b9dc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.7
+      value: 14.86
       objectReference: {fileID: 0}
     - target: {fileID: 3262551798945718713, guid: c1b63e9d7ef054b46802d19654c6b9dc,
         type: 3}
@@ -2689,17 +2706,17 @@ PrefabInstance:
     - target: {fileID: 15205262292683200, guid: bb828d091660e734e846f82bb365d597,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.618824
+      value: 42.312637
       objectReference: {fileID: 0}
     - target: {fileID: 15205262292683200, guid: bb828d091660e734e846f82bb365d597,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.165807
+      value: 7.191226
       objectReference: {fileID: 0}
     - target: {fileID: 15205262292683200, guid: bb828d091660e734e846f82bb365d597,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.689238
+      value: 28.14445
       objectReference: {fileID: 0}
     - target: {fileID: 15205262292683200, guid: bb828d091660e734e846f82bb365d597,
         type: 3}
@@ -2768,6 +2785,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 1f63c954669dfa34b83ee62095b774cd,
         type: 2}
+    - target: {fileID: 2349580304665191991, guid: bb828d091660e734e846f82bb365d597,
+        type: 3}
+      propertyPath: defaultWeaponName
+      value: Sword
+      objectReference: {fileID: 0}
     - target: {fileID: 1138807827821676002, guid: bb828d091660e734e846f82bb365d597,
         type: 3}
       propertyPath: m_LocalRotation.x
